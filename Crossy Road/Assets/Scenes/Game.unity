@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 11094850}
+  - component: {fileID: 11094851}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -155,6 +156,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11094851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11094849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a370f6df31013c94cb9b381b5e437426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lanes:
+  - {fileID: 4504358639794358356, guid: 2389ed9e1808e7b4293bebda392c109c, type: 3}
+  - {fileID: 4682850115318552571, guid: 85a7fc46ea32f8b46b6bf5b64a457baf, type: 3}
+  - {fileID: 1350073807849204484, guid: 5068e5243ed11b845bc505a81360a471, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +498,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -553,6 +571,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -20, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855767d62149ebf4293ed9442d5c75c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1423064515}
 --- !u!1001 &967434622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -819,6 +850,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 112
   groundCheckDistance: 0.2
+--- !u!4 &1423064515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400068, guid: 563c77a7bca0ce044b0940145d359888, type: 3}
+  m_PrefabInstance: {fileID: 967434622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1473545078
 PrefabInstance:
   m_ObjectHideFlags: 0

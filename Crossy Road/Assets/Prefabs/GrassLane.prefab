@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3484337805725209356}
   - component: {fileID: 2885744209867612524}
   - component: {fileID: 3145446553212323826}
+  - component: {fileID: 5398679340177133787}
   m_Layer: 0
   m_Name: GrassLane
   m_TagString: Untagged
@@ -98,6 +99,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5398679340177133787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504358639794358356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15452bafbd4455479515b82bf68eba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfLanes: 1
 --- !u!1 &6431105448338845150
 GameObject:
   m_ObjectHideFlags: 0
