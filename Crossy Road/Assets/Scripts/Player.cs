@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Physics.Raycast((transform.position + Vector3.up * 0.1f), Vector3.down, groundCheckDistance))
+        if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, groundCheckDistance))
         {
             isGrounded = true;
         }
@@ -35,17 +35,17 @@ public class Player : MonoBehaviour
                 AdjustPositionAndRotation(new Vector3(0, 0, 0));
                 rb.AddForce(new Vector3(0, jumpForce, jumpForce));
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 AdjustPositionAndRotation(new Vector3(0, 180, 0));
                 rb.AddForce(new Vector3(0, jumpForce, -jumpForce));
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 AdjustPositionAndRotation(new Vector3(0, -90, 0));
                 rb.AddForce(new Vector3(-jumpForce, jumpForce, 0));
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 AdjustPositionAndRotation(new Vector3(0, 90, 0));
                 rb.AddForce(new Vector3(jumpForce, jumpForce, 0));
