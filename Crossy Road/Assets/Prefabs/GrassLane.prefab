@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2885744209867612524}
   - component: {fileID: 3145446553212323826}
   - component: {fileID: 5398679340177133787}
+  - component: {fileID: 1357520033423014002}
   m_Layer: 0
   m_Name: GrassLane
   m_TagString: Untagged
@@ -112,6 +113,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfLanes: 1
+--- !u!114 &1357520033423014002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504358639794358356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71d302e19cf70541a6521c8816331ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - {fileID: 186111986783779919, guid: bc972679fa986fc4092cd396ece6f4ab, type: 3}
+  - {fileID: 719915630804076601, guid: d18991d8d436c7b4f83420fc2edeb06c, type: 3}
+  minSpawnTime: 0
+  maxSpawnTime: 0
+  spawnMovingObjects: 0
 --- !u!1 &6431105448338845150
 GameObject:
   m_ObjectHideFlags: 0
