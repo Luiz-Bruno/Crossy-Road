@@ -59,4 +59,13 @@ public class Player : MonoBehaviour
         transform.eulerAngles = newRotation;
         transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Round(transform.position.z));
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("StepTrigger"))
+        {
+            LevelManager.levelManager.SetSteps();
+            Destroy(other.gameObject);
+        }
+    }
 }

@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 3814498799877688581}
   m_Layer: 0
   m_Name: StepTrigger
-  m_TagString: Untagged
+  m_TagString: StepTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 680813506209878341}
   m_Layer: 0
   m_Name: StepTrigger
-  m_TagString: Untagged
+  m_TagString: StepTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 2238931556200444697}
   m_Layer: 0
   m_Name: StepTrigger
-  m_TagString: Untagged
+  m_TagString: StepTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 3614573849743420993}
   m_Layer: 0
   m_Name: StepTrigger
-  m_TagString: Untagged
+  m_TagString: StepTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

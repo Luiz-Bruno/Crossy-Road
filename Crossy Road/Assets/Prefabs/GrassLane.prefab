@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 5660694239118817657}
   m_Layer: 0
   m_Name: StepTrigger
-  m_TagString: Untagged
+  m_TagString: StepTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
