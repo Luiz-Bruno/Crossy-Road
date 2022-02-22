@@ -42,6 +42,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_with_Flowers
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ea9f0dab9038c3044b9f628d8b6d9ea9, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea9f0dab9038c3044b9f628d8b6d9ea9, type: 3}
       propertyPath: m_RootOrder
       value: 0

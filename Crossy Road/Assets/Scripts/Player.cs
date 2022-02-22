@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public float jumpForce = 112f;
     public float groundCheckDistance = 0.3f;
     private bool isGrounded = false;
+
+    public GameObject playerDead;
     
     // Start is called before the first frame update
     void Start()
@@ -67,5 +69,24 @@ public class Player : MonoBehaviour
             LevelManager.levelManager.SetSteps();
             Destroy(other.gameObject);
         }
+        if(other.CompareTag("Obstacle"))
+        {
+            GameOver();
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Obstacle"))
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        Instantiate(playerDead, transform.position, transform.rotation);
+        gameObject.SetActive(false);
+        LevelManager.levelManager.GameOver();
     }
 }
